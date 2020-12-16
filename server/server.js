@@ -5,7 +5,7 @@ var app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(express.static(__dirname))
-var dbPath = 'mongodb+srv://sree:usersree@cluster0.yfe6j.mongodb.net/<dbname>?retryWrites=true&w=majority';
+var dbPath = 'mongodb+srv://sree:usersree@cluster0.yfe6j.mongodb.net/test?retryWrites=true&w=majority';
 var Product = mongoose.model('product', {
     product: {
         productid: Number,
